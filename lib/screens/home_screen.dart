@@ -9,10 +9,28 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-        Background()
+        Background(),
+        _HomeBody()
         ],
       ),
       bottomNavigationBar: const CustonBottomNavigation(),
+    );
+  }
+}
+
+class _HomeBody extends StatelessWidget {
+  const _HomeBody({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          PageTitle(),
+        ],
+      ),
     );
   }
 }
