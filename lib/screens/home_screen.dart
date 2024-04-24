@@ -11,7 +11,8 @@ class HomeScreen extends StatelessWidget {
         children: [
         Background()
         ],
-      )
-   );
+      ),
+      bottomNavigationBar: const CustonBottomNavigation(),
+    );
   }
 }
