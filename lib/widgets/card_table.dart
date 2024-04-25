@@ -9,25 +9,19 @@ class CardTable extends StatelessWidget {
         TableRow(
           children: [
             _SingleCard(icon: Icons.border_all, color: Colors.blue , text: 'General'),
-            _SingleCard(icon: Icons.car_rental, color: Colors.pink , text: 'Transport'),
+            _SingleCard(icon: Icons.directions_bus, color: Colors.deepPurple , text: 'Transport'),
           ]
         ),
         TableRow(
           children: [
-            _SingleCard(icon: Icons.border_all, color: Colors.blue , text: 'General'),
-            _SingleCard(icon: Icons.car_rental, color: Colors.pink , text: 'Transport'),
+            _SingleCard(icon: Icons.shopping_bag_sharp, color: Colors.pinkAccent , text: 'Shopping'),
+            _SingleCard(icon: Icons.receipt, color: Colors.orange , text: 'Bills'),
           ]
         ),
         TableRow(
           children: [
-            _SingleCard(icon: Icons.border_all, color: Colors.blue , text: 'General'),
-            _SingleCard(icon: Icons.car_rental, color: Colors.pink , text: 'Transport'),
-          ]
-        ),
-        TableRow(
-          children: [
-            _SingleCard(icon: Icons.border_all, color: Colors.blue , text: 'General'),
-            _SingleCard(icon: Icons.car_rental, color: Colors.pink , text: 'Transport'),
+            _SingleCard(icon: Icons.movie, color: Color.fromARGB(255, 32, 107, 194) , text: 'Entretainment'),
+            _SingleCard(icon: Icons.local_grocery_store, color: Colors.green , text: 'grocery'),
           ]
         ),
       ],
@@ -57,8 +51,8 @@ class _SingleCard extends StatelessWidget {
         children: [
           CircleAvatar(
             backgroundColor: color,
-            radius: 30,
-            child: Icon(icon, size: 40,),
+            radius: 50,
+            child: Icon(icon, size: 55, color: Colors.white,),
           ),
           const SizedBox(height: 10,),
           Text(text, style:  TextStyle(color: color, fontSize: 18),)

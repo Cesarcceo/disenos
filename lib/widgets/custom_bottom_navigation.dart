@@ -6,7 +6,7 @@ class CustonBottomNavigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      // showSelectedLabels:  false,
+      showSelectedLabels:  false,
       showUnselectedLabels:  false,
       selectedItemColor: Colors.pink,
       backgroundColor: const Color.fromRGBO(55,57, 54, 1),
@@ -14,15 +14,15 @@ class CustonBottomNavigation extends StatelessWidget {
       currentIndex: 0,
       items: const [
         BottomNavigationBarItem(
-          icon: Icon(Icons.calendar_today_outlined),
+          icon: Icon(Icons.calendar_today_rounded),
           label: 'Calendario'
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.calendar_today_outlined),
+          icon: Icon(Icons.bar_chart_rounded),
           label: 'Calendario'
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.calendar_today_outlined),
+          icon: Icon(Icons.supervised_user_circle_rounded),
           label: 'Calendario'
         ),
       ]
