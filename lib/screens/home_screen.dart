@@ -29,6 +29,7 @@ class _HomeBody extends StatelessWidget {
       child: Column(
         children: [
           PageTitle(),
+          CardTable(),
         ],
       ),
     );
